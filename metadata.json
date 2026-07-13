@@ -1,0 +1,6 @@
+{
+  "name": "Event Hub",
+  "description": "Discover, book, and create premium local events, featuring dynamic scheduling, interactive maps, reviews, and a personalized ticket wallet.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
