@@ -1,7 +1,5 @@
 // src/components/LandingSections.tsx
-import React from "react";
 import {
-  Users,
   Award,
   ShieldCheck,
   Flame,
@@ -12,6 +10,117 @@ import {
   Twitter,
   Linkedin,
 } from "lucide-react";
+
+// src/components/LandingSections.tsx (এর ভেতরে যুক্ত করো)
+import React from "react";
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  CartesianGrid,
+} from "recharts";
+import { TrendingUp, Users, Ticket } from "lucide-react";
+
+// Mock Data for Global Booking Trends over months
+const MOCK_TREND_DATA = [
+  { month: "Jan", Bookings: 120, PremiumPasses: 45 },
+  { month: "Feb", Bookings: 210, PremiumPasses: 85 },
+  { month: "Mar", Bookings: 180, PremiumPasses: 60 },
+  { month: "Apr", Bookings: 340, PremiumPasses: 150 },
+  { month: "May", Bookings: 310, PremiumPasses: 130 },
+  { month: "Jun", Bookings: 480, PremiumPasses: 220 },
+  { month: "Jul", Bookings: 590, PremiumPasses: 310 },
+];
+
+export function TrendChartSection() {
+  return (
+    <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-xs space-y-6 text-left my-8">
+      {/* Section Meta Header */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="space-y-1">
+          <span className="inline-flex items-center space-x-1 bg-indigo-50 text-indigo-600 text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md">
+            <TrendingUp className="w-3 h-3" />
+            <span>Platform Metrics</span>
+          </span>
+          <h3 className="text-lg font-black text-slate-900 tracking-tight">
+            Global Assembly Engagement & Reservations
+          </h3>
+          <p className="text-xs text-slate-400">
+            Real-time visual ledger tracking platform-wide pass reservations and
+            premium tier admissions.
+          </p>
+        </div>
+
+        {/* Legend pills */}
+        <div className="flex items-center space-x-4 text-[11px] font-bold text-slate-600">
+          <div className="flex items-center space-x-1.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-indigo-600 inline-block"></span>
+            <span>Total Bookings</span>
+          </div>
+          <div className="flex items-center space-x-1.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
+            <span>Premium Passes</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Interactive Area Chart (Requirement 1) */}
+      <div className="h-64 w-full text-[10px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <AreaChart
+            data={MOCK_TREND_DATA}
+            margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
+          >
+            <defs>
+              <linearGradient id="colorBookings" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#6366f1" stopOpacity={0.1} />
+                <stop offset="95%" stopColor="#6366f1" stopOpacity={0} />
+              </linearGradient>
+              <linearGradient id="colorPremium" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#10b981" stopOpacity={0.1} />
+                <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
+              </linearGradient>
+            </defs>
+            <CartesianGrid
+              strokeDasharray="3 3"
+              stroke="#f1f5f9"
+              vertical={false}
+            />
+            <XAxis dataKey="month" stroke="#94a3b8" tickLine={false} />
+            <YAxis stroke="#94a3b8" tickLine={false} axisLine={false} />
+            <Tooltip
+              contentStyle={{
+                backgroundColor: "#ffffff",
+                borderRadius: "16px",
+                border: "1px solid #f1f5f9",
+                boxShadow: "0 4px 6px -1px rgb(0 0 0 / 0.05)",
+              }}
+            />
+            <Area
+              type="monotone"
+              dataKey="Bookings"
+              stroke="#6366f1"
+              strokeWidth={2}
+              fillOpacity={1}
+              fill="url(#colorBookings)"
+            />
+            <Area
+              type="monotone"
+              dataKey="PremiumPasses"
+              stroke="#10b981"
+              strokeWidth={2}
+              fillOpacity={1}
+              fill="url(#colorPremium)"
+            />
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
+}
 
 // --- ৪. STATS SECTION ---
 export function StatsSection() {

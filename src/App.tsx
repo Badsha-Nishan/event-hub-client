@@ -18,6 +18,7 @@ import {
   FeaturedHighlights,
   TestimonialsSection,
   Footer,
+  TrendChartSection,
 } from "./components/LandingSections";
 
 import { SkeletonCard } from "./components/SkeletonCard";
@@ -529,6 +530,7 @@ export default function App() {
                 </div>
 
                 <StatsSection />
+                <TrendChartSection />
                 <FeaturedHighlights />
                 <TestimonialsSection />
               </motion.div>
