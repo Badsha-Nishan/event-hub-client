@@ -30,7 +30,15 @@ export interface EventItem {
   title: string;
   description: string;
   longDescription?: string;
-  category: 'Music' | 'Tech' | 'Business' | 'Arts' | 'Food' | 'Design' | 'Sports' | 'Networking';
+  category:
+    | "Music"
+    | "Tech"
+    | "Business"
+    | "Arts"
+    | "Food"
+    | "Design"
+    | "Sports"
+    | "Networking";
   tag: string;
   date: string;
   displayDate: string;
@@ -51,8 +59,8 @@ export interface User {
   id: string;
   name: string;
   email: string;
-  role?: string;
-  isDemo?: boolean;
+  role: "user" | "admin" | "Premium Member" | "Administrator";
+  password?: string;
 }
 
 export interface Booking {

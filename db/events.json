@@ -1,0 +1,241 @@
+[
+  {
+    "id": "future-horizon-2024",
+    "title": "Future Horizon: AI & Creative Innovation Summit 2024",
+    "description": "Join the industry's leading visionaries for a three-day exploration into the intersection of artificial intelligence and human creativity.",
+    "longDescription": "Future Horizon is not just a conference; it's a collaborative ecosystem designed for professionals who are shaping the next decade of digital innovation.\n\nOur 2024 summit features keynote presentations from world-renowned researchers, hands-on workshops led by technical architects, and exclusive networking sessions designed to foster long-term professional partnerships. Whether you're a developer, designer, or executive strategist, this event provides the high-level insights required to navigate the rapidly evolving technological landscape.",
+    "category": "Tech",
+    "tag": "Technology",
+    "date": "2024-10-24",
+    "displayDate": "Oct 24 - 26, 2024",
+    "location": "Innovation Hub, San Francisco",
+    "price": 299,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDaty1gCXF0LzTvSc85KSpN_r-Q_E8q5ITKj6jnFs9ytQtQKQ82v4BAIsoOHY10nBUq_hfuSfevHFVmSwx4tdBmIuLGmtk9Zk4yLB7bwCMrzR6fxUcqB6GnC1SbI785uFf517VYyjEmPXJ6BoIg0TyJY6X_Fz3D8bKZMofjurTSeDYpy5ph2y7L_AurFwmTX1GgtJH16oQfJ4almLLRtB8qiIF_LRak_D5j_bGu0tm9E71nj8UD6FuN",
+    "spotsLeft": 12,
+    "organizer": {
+      "name": "Silicon Collective",
+      "eventsHosted": 154,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    },
+    "schedule": [
+      {
+        "dayTitle": "Day 1: Foundations & Vision",
+        "date": "Oct 24, 2024",
+        "items": [
+          {
+            "time": "09:00 AM",
+            "title": "Opening Keynote: The AI Renaissance",
+            "description": "Speaker: Dr. Aris Thorne, Lead AI Researcher at NexaCore"
+          },
+          {
+            "time": "11:30 AM",
+            "title": "Workshop: Generative Design Workflows",
+            "description": "Hands-on session with the latest design automation tools."
+          }
+        ]
+      },
+      {
+        "dayTitle": "Day 2: Technical Deep Dives",
+        "date": "Oct 25, 2024",
+        "items": [
+          {
+            "time": "10:00 AM",
+            "title": "Panel: Ethics in Autonomous Systems",
+            "description": "A roundtable discussion with policy makers and engineers."
+          }
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-1",
+        "userName": "Sarah Jenkins",
+        "userRole": "CTO, CloudScale",
+        "userInitials": "SK",
+        "rating": 5,
+        "comment": "The most professional networking event I've attended this year. The insights on AI infrastructure were immediately applicable to our roadmap.",
+        "date": "Oct 27, 2024"
+      },
+      {
+        "id": "rev-2",
+        "userName": "Marcus Lee",
+        "userRole": "Creative Director",
+        "userInitials": "ML",
+        "rating": 4,
+        "comment": "Fantastic blend of creative and technical tracks. Highly recommend for design leaders looking to understand automation better.",
+        "date": "Oct 28, 2024"
+      }
+    ]
+  },
+  {
+    "id": "founders-night-2024",
+    "title": "Founder's Night: AI Future",
+    "description": "Connect with leading innovators and venture capitalists in the heart of the tech district for a night of deep insights.",
+    "longDescription": "Founder's Night is an exclusive, high-impact networking gathering tailored for early-stage founders, veteran operators, and top-tier angel investors. This session focuses specifically on the emerging artificial intelligence stack and capital allocation trends.\n\nEnjoy curated speed-networking modules, high-end cocktail options, and an interactive panel discussing the future of AI startup scalability.",
+    "category": "Networking",
+    "tag": "Tech & Mixer",
+    "date": "2024-10-24",
+    "displayDate": "Oct 24, 2024",
+    "location": "San Francisco, CA",
+    "price": 45,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDu9G2ZLVVvtophWL91g3RJXpz7VAxlQfa3DUbxtcZcuzMfEcYJx-UIbGIJrfs92GMdC8hL0WZBhpoLmMf2x-nI_E83XeU51vHzFY6loR10kQTRw3nw9qiZsbYr8CcU7ILREIWgTXKiIOoqZ2-F84vJXO9F-zujIZAEOd5XTKhCAwXbiT8xtDxL5Al0725-Tmd9TJBQIgiQtYo2hA1rtMrjz99sLdx7BSnbeLjO-g-8CLvGHngbou-I",
+    "spotsLeft": 40,
+    "organizer": {
+      "name": "San Francisco Innovators",
+      "eventsHosted": 42,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    }
+  },
+  {
+    "id": "symphony-in-the-park",
+    "title": "Symphony in the Park",
+    "description": "An evening of classical masterpieces performed by the National Philharmonic under the starlit sky.",
+    "longDescription": "Immerse yourself in an inspiring acoustic experience in the gorgeous setting of the Central Botanical Gardens. Bring a picnic blanket, enjoy artisanal dining pairings, and let the live classical arrangements elevate your evening.\n\nFeaturing compositions from Mozart, Beethoven, and contemporary film scores.",
+    "category": "Music",
+    "tag": "Cultural Gala",
+    "date": "2024-11-02",
+    "displayDate": "Nov 02, 2024",
+    "location": "Central Park, NY",
+    "price": 0,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_AiGNHlHs-s-11knHjm7-N6mOdUNlSxy-d2cSCcqdEZBNCxqKlLh15tNfd-N06FIa60tdTKESEdIyNObw7xe0pqUkETm3T_jfTUeyAW3hFIp3YBbixC2vs12Sv_zWIubgK7c_7hZr3BEK-88o0l-OPrXv1a3pMNKg7tCRo0u0_KJuQ5CcqAzHNq1l2fg3pD2xXqyD5n6v1tgSje4ML4fvmIP6NzAaalVd7lGNKxdwgHkzvKdx-1bi",
+    "spotsLeft": 349,
+    "organizer": {
+      "name": "National Philharmonic Society",
+      "eventsHosted": 88,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    }
+  },
+  {
+    "id": "modern-ux-masterclass",
+    "title": "Modern UX Masterclass",
+    "description": "Learn the latest design systems and accessibility trends from industry leaders at major design firms.",
+    "longDescription": "A comprehensive intensive designed specifically for mid-to-senior product designers and frontend architects. Master modern Figma component construction, tokenized variables, semantic layout definitions, and deep Web Content Accessibility Guidelines (WCAG) 2.2 alignment standards.\n\nIncludes access to a collaborative canvas playground and dynamic template packages.",
+    "category": "Design",
+    "tag": "Creative",
+    "date": "2024-11-15",
+    "displayDate": "Nov 15, 2024",
+    "location": "Chicago, IL",
+    "price": 120,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAaTrw-P3P1DCRg3f9uLCdZQPLIZQ1iui1ixhTrwsZtYvgYGwI20ioWZqTNaTmO2yY_lLSbmn-Wq10dcpaVrvGOTUxP7IxfaQjPfaAZG5hpGHJUm6YDoTOfGHvvmhLzF-kdcCA5MQXLhqLr6yoZ6_VWpO9zGBKImshj7wklh0urxniIcxontfhViBrxaCuODRXkbrANMFZ3v_z1ISmPGomC9aqknlC5d_lu5rWrjnmFW6hjdOPMwjHH",
+    "spotsLeft": 24,
+    "organizer": {
+      "name": "Creative Studio Association",
+      "eventsHosted": 112,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    }
+  },
+  {
+    "id": "global-ai-summit-2024",
+    "title": "Global AI Summit 2024",
+    "description": "Connect with world leaders in artificial intelligence and explore the future of machine learning.",
+    "longDescription": "Join thousands of developers, researchers, and tech pioneers at the preeminent conference for Artificial Intelligence. Over three days, discover groundbreaking developments in LLMs, reinforcement learning, computer vision, and neural network scale constraints.\n\nNetwork with industry icons, attend interactive roundtables, and gain the competitive knowledge required in this rapid technological shift.",
+    "category": "Tech",
+    "tag": "Trending",
+    "date": "2024-10-24",
+    "displayDate": "Oct 24, 2024",
+    "location": "San Francisco, CA",
+    "price": 149,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBmieiPdMeDRgo2-7mFVBnup8ydBJiOKlBvCjRchT5h8y4x8bAUjvv-9EL-bcdQVnn9sXCMinItSUHq8QYsg-z8r0--fLy7Vk-wrX1bS24iLMm-cRH5FfsFU7cRm4wT_hL3o5KcEQSSHCamCWfhlxdfcuvoGFo-pl4dKPXWCZ-S-BsCui3VWdFJhw8xkq11NS8fliO8hbJm_AyTR9oouEqqywCEUF4uaAknEyqi6FELPOVsNdUzYLRd",
+    "spotsLeft": 54,
+    "organizer": {
+      "name": "Silicon Collective",
+      "eventsHosted": 154,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    }
+  },
+  {
+    "id": "midnight-jazz-sessions",
+    "title": "Midnight Jazz Sessions",
+    "description": "An exclusive evening of soul-stirring jazz performances on the city's premier rooftop lounge.",
+    "longDescription": "Experience the deep, rich sound of classic jazz on an elite open-air deck. Sip on customized cocktails crafted by top mixologists while enjoying premium acoustics and panoramic views of the city lights.\n\nFeatures award-winning saxophone arrangements and classic keyboard loops.",
+    "category": "Music",
+    "tag": "Elite",
+    "date": "2024-10-28",
+    "displayDate": "Oct 28, 2024",
+    "location": "New York, NY",
+    "price": 45,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKzMpCQXGjZXnyJN66ufTbaas8cVeQ20yhuqzXjhJMyMG-89as1CJv_n2HZiKePN0FAshHjhvGpTRljmvehJ0sAJ3bhgKAvxhduUkDv1VphuHPuLr-IK-e5EW_-cZd1bkBNt442zE_LbiQtCIqAF_-C7ILXca7gjIcGaJSLVmOLhncLM9XK5Df2qvvidp5kbtRdENSm73x-mczOE8ToWLgStTx8wUg3uEVTB35ignCAoLZmz2_mjtU",
+    "spotsLeft": 18,
+    "organizer": {
+      "name": "Rooftop Lounge Society",
+      "eventsHosted": 33,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    }
+  },
+  {
+    "id": "artisan-cooking-masterclass",
+    "title": "Artisan Cooking Masterclass",
+    "description": "Learn the secrets of Michelin-starred chefs in this intensive hands-on culinary experience.",
+    "longDescription": "Step inside a beautiful minimalist industrial kitchen for a curated, premium culinary masterclass. Discover advanced plating chemistry, optimal organic scaling strategies, and proper sauce reductions directly from veteran hospitality stars.\n\nAll gourmet ingredients and custom wine pairings included.",
+    "category": "Food",
+    "tag": "Top Rated",
+    "date": "2024-11-02",
+    "displayDate": "Nov 02, 2024",
+    "location": "Chicago, IL",
+    "price": 120,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDLXWDNfgbGqCSn0La5i5oDpx7eojhS8TA2FPfP3q53CVMuqKC90KteXMck4J3N0bALamOlkuoxnkV_3eOjVr8hMVdnCbNG2udPIXMOiH9rgydiYdglZ3eGw62CdEFWy2NpUuXzH8SqGCtmP9jOUIgCA3LFSHgsROZvOCZlvHZjsME2DT1BfCSH93WeT3Ux9w3qjHvjIfTzNmcXa5BTdORMi0ya_QlJA1Qi1Hl_DBuPjPHk-vBX9uww",
+    "spotsLeft": 8,
+    "organizer": {
+      "name": "Artisanal Guild Chicago",
+      "eventsHosted": 19,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    }
+  },
+  {
+    "id": "neon-dreams-digital-art",
+    "title": "Neon Dreams: Digital Art",
+    "description": "Explore the intersection of light, technology, and imagination in this immersive digital art showcase.",
+    "longDescription": "Immerse yourself inside a beautifully transformed industrial warehouse where digital projections react in real-time to visitor movement. Curated by global contemporary digital artists, Neon Dreams presents a stunning showcase of computer-generated light structures and atmospheric synth-scapes.\n\nPerfect for design thinkers, visual curators, and creative tech fans.",
+    "category": "Arts",
+    "tag": "Trending",
+    "date": "2024-11-05",
+    "displayDate": "Nov 05, 2024",
+    "location": "Los Angeles, CA",
+    "price": 0,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA7WYmF5_EJee3mfOj5MfM2-4sRwB7-mrPGZGdKA1xKvBBepNN3OPqyX4p5ofQQ2LawYGsH0qQheGeje9Sxh4MVa2qFrvOTqOWz1iyQYxyYqNEANQ-Yj8oO5w6-h3ER4VkoyJRf3S4X1-X_iWl4uNjSdFsjhRzQ_0Qdkw8t02Fiz9M10As04h7RXukj9hc3jjVBi1WsuCIAuYWvzZUyLD02uRIeq65pDncu_Y5gRuQ0jU-TqmJU2_W7",
+    "spotsLeft": 120,
+    "organizer": {
+      "name": "Immersive Los Angeles",
+      "eventsHosted": 26,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    }
+  },
+  {
+    "id": "founders-funders-night",
+    "title": "Founders & Funders Night",
+    "description": "An exclusive mixer for startup founders and venture capitalists to discuss the next wave of innovation.",
+    "longDescription": "Hosted in a gorgeous corporate penthouse lounge in Austin, this elite mixer is where dynamic ideas meet early-stage venture capital. Gather with top-tier angel syndicates and strategic institutional funds looking for innovative business models.\n\nAppetizers, wine pairings, and a short opening VC roundtable included.",
+    "category": "Networking",
+    "tag": "Elite",
+    "date": "2024-11-10",
+    "displayDate": "Nov 10, 2024",
+    "location": "Austin, TX",
+    "price": 75,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAq58ZuAABlua4_M__HeY2dUD37R4Ww4f5om0DgPbOkjy5MKx2BeAJ1fZBvcwVzonblO87ANDrIKJ8_RorRx8d0EkFfaxyo7P0K8Orytro5vTLEySELfqn1QMsSuB3FEua9s1sr8k8txDXgMJL1txrXTp1_W8GkA_Ah5bjTCATF0DY2ckqVxjLzECVX4ES2AFtJo2EcktybnGOafXuli-5qr2S82e6Xp5tNtmJUAMFpn_X5PAiCYLis",
+    "spotsLeft": 15,
+    "organizer": {
+      "name": "Silicon Hills Angels",
+      "eventsHosted": 54,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    }
+  },
+  {
+    "id": "coastal-charity-run-2024",
+    "title": "Coastal Charity Run 2024",
+    "description": "Join thousands of runners for a scenic 10k run along the coast to support local youth education.",
+    "longDescription": "A classic coastal athletic gathering designed for both competitive running groups and casual families. All ticket proceeds are directly donated to supporting local underprivileged youth coding and arts facilities.\n\nEnjoy energetic course entertainment, scenic ocean vistas, a custom runner token package, and high-energy final stage celebrations.",
+    "category": "Sports",
+    "tag": "Active",
+    "date": "2024-11-15",
+    "displayDate": "Nov 15, 2024",
+    "location": "Miami, FL",
+    "price": 30,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuColCNRNgnR6gQBNBCqqFlu9GJ2e6sz0AM8wErbKrb_UEC8h4ow0_9M4IIPvtcsSbu2-FzFBXK6mu4hyyCJZXKZIJhNnCeUU8yshXO3nXdY8O2W98kMPChSqgmpdnWSqnMyXjek2mpywj7poIfplrOLWHlHaNG3qhXLlNFuQvAAs6tNQTruolO4_DUfom2KV-5OGUMqfi98CvgYAHjIJk_bqqusRxU0ihlVrGIJSB2ZhVbHTypc2iJ3",
+    "spotsLeft": 399,
+    "organizer": {
+      "name": "Miami Active Education",
+      "eventsHosted": 12,
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeBA6qQ2LPF15z375K9SwpU4JWpbB9cqU0SxWvCLB_RRFV9hrBTh2IfsdfV_2WpIIt-_7xkJhxl43V_j4WOKDm3gzgCGQ3jiEppddr3T-jHAWv8QJDvTTqCeQFUiE3MuIQr6Sm28DEviGWLm9Gh210EgFWIDMnwIdEAEF4AcoYEoFmcpFhk4nPvCoe1TofTxZLBBx6SYvy7_KRH-L8mwtHZg2VBVza2zl6NEydd81lkEixd7rcc5dB"
+    }
+  }
+]
