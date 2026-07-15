@@ -52,7 +52,12 @@ const CATEGORY_ICONS: Record<string, React.ReactNode> = {
 };
 
 export default function App() {
-  const API_BASE = "http://localhost:5000/api";
+// @ts-ignore
+const isDev = import.meta.env ? import.meta.env.DEV : false;
+
+const API_BASE = isDev 
+  ? "http://localhost:5000/api" 
+  : "/api";
   const { showToast } = useToast();
 
   // Central Application State
