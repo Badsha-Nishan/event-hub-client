@@ -16,10 +16,12 @@ import {
 import { User, Booking } from "../../types";
 
 interface NavbarProps {
-  currentUser: User | null; // null মানে ইউজার লগড-আউট
+  currentUser: User | null;
   bookings: Booking[];
   onLogout: () => void;
   onLoginDemo: (role: "user" | "admin") => void;
+  onAddEventClick: () => void; // ⚡ মডাল ওপেন করার নতুন প্রপ্স
+  onTabChange: (tab: "explore" | "bookings") => void; // ⚡ ট্যাব চেঞ্জ করার প্রপ্স
 }
 
 export function Navbar({
@@ -27,10 +29,12 @@ export function Navbar({
   bookings,
   onLogout,
   onLoginDemo,
+  onAddEventClick,
+  onTabChange,
 }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  // লগড-ইন এবং লগড-আউট রুটগুলোর ডেটা স্ট্রাকচার
+  // লগড-আউট ইউজারদের লিংক
   const loggedOutLinks = [
     { name: "Home", icon: <Compass className="w-4 h-4" />, href: "#" },
     {
@@ -42,35 +46,15 @@ export function Navbar({
     { name: "Contact", icon: <Phone className="w-4 h-4" />, href: "#contact" },
   ];
 
-  const loggedInLinks = [
-    {
-      name: "Explore",
-      icon: <Compass className="w-4 h-4" />,
-      href: "#explore",
-    },
-    {
-      name: "Add Event",
-      icon: <PlusCircle className="w-4 h-4" />,
-      href: "#add-event",
-    },
-    {
-      name: "My Bookings",
-      icon: <BookmarkCheck className="w-4 h-4" />,
-      badge: bookings.length,
-    },
-    {
-      name: "Manage Items",
-      icon: <Settings className="w-4 h-4" />,
-      href: "#manage",
-    },
-  ];
-
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/80 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2 cursor-pointer">
+          <div
+            onClick={() => onTabChange("explore")}
+            className="flex items-center space-x-2 cursor-pointer"
+          >
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-md shadow-indigo-600/20">
               <Calendar className="h-5 w-5" />
             </div>
@@ -82,33 +66,70 @@ export function Navbar({
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {currentUser ? (
-              // Logged In Desktop View (Minimum 5 elements/actions)
               <>
-                {loggedInLinks.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.href || "#"}
-                    className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all"
-                  >
-                    {link.icon}
-                    <span>{link.name}</span>
-                    {link.badge !== undefined && link.badge > 0 && (
-                      <span className="ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-indigo-600 text-[10px] font-extrabold text-white animate-pulse">
-                        {link.badge}
-                      </span>
-                    )}
-                  </a>
-                ))}
+                {/* Explore (সব রোলই দেখতে পারবে) */}
+                <button
+                  onClick={() => {
+                    onTabChange("explore");
+                    document
+                      .getElementById("explore")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 cursor-pointer transition-all"
+                >
+                  <Compass className="w-4 h-4" />
+                  <span>Explore</span>
+                </button>
 
-                {/* User Profile Tag & Logout Button */}
+                {/* My Bookings (সব রোলই দেখতে পারবে) */}
+                <button
+                  onClick={() => onTabChange("bookings")}
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 cursor-pointer transition-all"
+                >
+                  <BookmarkCheck className="w-4 h-4" />
+                  <span>My Bookings</span>
+                  {bookings.length > 0 && (
+                    <span className="ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-indigo-600 text-[10px] font-extrabold text-white animate-pulse">
+                      {bookings.length}
+                    </span>
+                  )}
+                </button>
+
+                {/* 🔒 শুধুমাত্র ADMIN দেখতে পারবে: Add Event & Manage Items */}
+                {currentUser.role === "admin" && (
+                  <>
+                    <button
+                      onClick={onAddEventClick}
+                      className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold text-emerald-600 hover:bg-emerald-50/60 cursor-pointer transition-all bg-emerald-50/30 border border-emerald-100/50"
+                    >
+                      <PlusCircle className="w-4 h-4" />
+                      <span>Add Event</span>
+                    </button>
+                    <a
+                      href="#manage"
+                      className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all"
+                    >
+                      <Settings className="w-4 h-4" />
+                      <span>Manage Items</span>
+                    </a>
+                  </>
+                )}
+
+                {/* User Profile Info & Logout */}
                 <div className="flex items-center space-x-3 ml-4 pl-4 border-l border-slate-200">
-                  <div className="text-right">
+                  <div className="text-left">
                     <p className="text-xs font-bold text-slate-800">
                       {currentUser.name}
                     </p>
-                    <p className="text-[10px] font-medium text-slate-400">
+                    <span
+                      className={`inline-block text-[9px] font-extrabold px-1.5 py-0.5 rounded-md uppercase tracking-wider ${
+                        currentUser.role === "admin"
+                          ? "bg-rose-50 text-rose-600 border border-rose-100"
+                          : "bg-slate-100 text-slate-600"
+                      }`}
+                    >
                       {currentUser.role}
-                    </p>
+                    </span>
                   </div>
                   <button
                     onClick={onLogout}
@@ -120,7 +141,6 @@ export function Navbar({
                 </div>
               </>
             ) : (
-              // Logged Out Desktop View (Minimum 3 routes)
               <>
                 {loggedOutLinks.map((link) => (
                   <a
@@ -133,14 +153,22 @@ export function Navbar({
                   </a>
                 ))}
 
-                {/* Demo Login Trigger Button */}
-                <button
-                  onClick={() => onLoginDemo("user")}
-                  className="ml-4 flex items-center space-x-1.5 rounded-xl bg-indigo-600 px-4 py-2 text-xs font-bold text-white shadow-md shadow-indigo-600/10 hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-600/20 transition-all cursor-pointer"
-                >
-                  <LogIn className="w-4 h-4" />
-                  <span>Demo Login</span>
-                </button>
+                {/* Demo Logins for Testing Roles */}
+                <div className="flex items-center space-x-2 ml-4 pl-4 border-l border-slate-200">
+                  <button
+                    onClick={() => onLoginDemo("user")}
+                    className="flex items-center space-x-1 rounded-xl bg-slate-100 px-3 py-2 text-xs font-bold text-slate-700 hover:bg-slate-200 cursor-pointer transition-all"
+                  >
+                    <span>User Login</span>
+                  </button>
+                  <button
+                    onClick={() => onLoginDemo("admin")}
+                    className="flex items-center space-x-1.5 rounded-xl bg-indigo-600 px-3 py-2 text-xs font-bold text-white shadow-md shadow-indigo-600/10 hover:bg-indigo-700 transition-all cursor-pointer"
+                  >
+                    <LogIn className="w-4 h-4" />
+                    <span>Admin Login</span>
+                  </button>
+                </div>
               </>
             )}
           </div>
@@ -163,33 +191,59 @@ export function Navbar({
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden border-t border-slate-100 bg-white px-4 py-3 space-y-1 shadow-inner animate-in fade-in slide-in-from-top-2 duration-150">
+        <div className="md:hidden border-t border-slate-100 bg-white px-4 py-3 space-y-1 shadow-inner text-left">
           {currentUser ? (
             <>
-              {loggedInLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href || "#"}
-                  onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-between rounded-xl px-3 py-2.5 text-xs font-bold text-slate-600 hover:bg-indigo-50 hover:text-indigo-600"
-                >
-                  <div className="flex items-center space-x-2">
-                    {link.icon}
-                    <span>{link.name}</span>
-                  </div>
-                  {link.badge !== undefined && link.badge > 0 && (
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-indigo-600 text-[10px] font-bold text-white">
-                      {link.badge}
-                    </span>
-                  )}
-                </a>
-              ))}
+              <button
+                onClick={() => {
+                  onTabChange("explore");
+                  setIsOpen(false);
+                }}
+                className="w-full flex items-center space-x-2 rounded-xl px-3 py-2.5 text-xs font-bold text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 cursor-pointer"
+              >
+                <Compass className="w-4 h-4" />
+                <span>Explore</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  onTabChange("bookings");
+                  setIsOpen(false);
+                }}
+                className="w-full flex items-center justify-between rounded-xl px-3 py-2.5 text-xs font-bold text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 cursor-pointer"
+              >
+                <div className="flex items-center space-x-2">
+                  <BookmarkCheck className="w-4 h-4" />
+                  <span>My Bookings</span>
+                </div>
+                {bookings.length > 0 && (
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-indigo-600 text-[10px] font-bold text-white">
+                    {bookings.length}
+                  </span>
+                )}
+              </button>
+
+              {currentUser.role === "admin" && (
+                <>
+                  <button
+                    onClick={() => {
+                      onAddEventClick();
+                      setIsOpen(false);
+                    }}
+                    className="w-full flex items-center space-x-2 rounded-xl px-3 py-2.5 text-xs font-bold text-emerald-600 hover:bg-emerald-50 cursor-pointer"
+                  >
+                    <PlusCircle className="w-4 h-4" />
+                    <span>Add Event</span>
+                  </button>
+                </>
+              )}
+
               <div className="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between px-3">
                 <div>
                   <p className="text-xs font-bold text-slate-800">
                     {currentUser.name}
                   </p>
-                  <p className="text-[10px] font-medium text-slate-400">
+                  <p className="text-[10px] font-medium text-slate-400 uppercase">
                     {currentUser.role}
                   </p>
                 </div>
@@ -198,7 +252,7 @@ export function Navbar({
                     onLogout();
                     setIsOpen(false);
                   }}
-                  className="flex items-center space-x-1 rounded-xl bg-rose-50 px-3 py-2 text-xs font-bold text-rose-600"
+                  className="flex items-center space-x-1 rounded-xl bg-rose-50 px-3 py-2 text-xs font-bold text-rose-600 cursor-pointer"
                 >
                   <LogOut className="w-4 h-4" />
                   <span>Logout</span>
@@ -218,16 +272,25 @@ export function Navbar({
                   <span>{link.name}</span>
                 </a>
               ))}
-              <div className="pt-2">
+              <div className="pt-2 flex flex-col gap-2">
                 <button
                   onClick={() => {
                     onLoginDemo("user");
                     setIsOpen(false);
                   }}
-                  className="w-full flex items-center justify-center space-x-1.5 rounded-xl bg-indigo-600 py-2.5 text-xs font-bold text-white"
+                  className="w-full flex items-center justify-center space-x-1.5 rounded-xl bg-slate-100 py-2.5 text-xs font-bold text-slate-700 cursor-pointer"
+                >
+                  <span>User Login</span>
+                </button>
+                <button
+                  onClick={() => {
+                    onLoginDemo("admin");
+                    setIsOpen(false);
+                  }}
+                  className="w-full flex items-center justify-center space-x-1.5 rounded-xl bg-indigo-600 py-2.5 text-xs font-bold text-white cursor-pointer"
                 >
                   <LogIn className="w-4 h-4" />
-                  <span>Demo Login</span>
+                  <span>Admin Login</span>
                 </button>
               </div>
             </>
