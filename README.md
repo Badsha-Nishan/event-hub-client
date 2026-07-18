@@ -6,12 +6,11 @@ A modern Full-Stack Event Management Platform built with **React, TypeScript, No
 
 ## 🌐 Live Demo
 
-🔗 Live Site: https://your-live-link.com
+🔗 Live Site: [https://your-live-link.com](https://event-hub-client-gold.vercel.app/)
 
 ## 📂 GitHub Repository
 
-- Frontend: https://github.com/your-username/eventhub-client
-- Backend: https://github.com/your-username/eventhub-server
+- https://github.com/Badsha-Nishan/event-hub-client
 
 ---
 
@@ -199,8 +198,8 @@ CLIENT_URL=http://localhost:5173
 
 **Sk Badsha Nishan**
 
-- GitHub: https://github.com/your-username
-- LinkedIn: https://linkedin.com/in/your-profile
+- GitHub: [https://github.com/your-username](https://github.com/Badsha-Nishan)
+- LinkedIn: [https://linkedin.com/in/your-profile](https://www.linkedin.com/in/badsha-nishan/)
 
 ---
 
