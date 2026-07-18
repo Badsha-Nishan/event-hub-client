@@ -6,7 +6,7 @@ A modern Full-Stack Event Management Platform built with **React, TypeScript, No
 
 ## 🌐 Live Demo
 
-🔗 Live Site: [https://your-live-link.com](https://event-hub-client-gold.vercel.app/)
+🔗 Live Site: (https://event-hub-client-gold.vercel.app/)
 
 ## 📂 GitHub Repository
 
