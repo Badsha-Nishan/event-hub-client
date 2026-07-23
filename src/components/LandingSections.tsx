@@ -272,8 +272,8 @@ export function TestimonialsSection() {
 // --- 🌐 ৭. FOOTER MATRIX SECTION ---
 export function Footer() {
   return (
-    <footer className="mt-20 border-t border-slate-100 bg-white pt-12 pb-6 text-left">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-xs">
+    <footer className="mt-20 border-t mx-auto max-w-7xl border-slate-100 bg-white pt-12 pb-6 text-left">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-xs justify-items-center">
         <div className="space-y-3">
           <div className="flex items-center space-x-2">
             <div className="h-6 w-6 rounded-lg bg-indigo-600 flex items-center justify-center font-black text-white text-xs">
